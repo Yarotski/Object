@@ -12,5 +12,10 @@ namespace Object
         {
             Specialization = spec;
         }
+
+        public override string GetInfo()
+        {
+            return FirstName + " " + LastName + " " + Salary + " " + Specialization;
+        }
     }
 }

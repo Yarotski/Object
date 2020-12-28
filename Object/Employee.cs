@@ -10,6 +10,11 @@ namespace Object
         public string LastName { get; set; }
         public float Salary { get; set; }
 
+        public virtual string GetInfo()
+        {
+            return FirstName + " " + LastName + " " + Salary;
+        }
+
         public Employee(string fn, string ln, float sal)
         {
             FirstName = fn;

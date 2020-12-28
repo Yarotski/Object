@@ -8,23 +8,21 @@ namespace Object
 
         static void Main(string[] args)
         {
-            Employee employee1 = new Employee("fn1", "ln1", 1200f); 
-            Employee employee2 = new Employee("fn2", "ln2", 1500f); 
-            Employee employee3 = new Employee("fn3", "ln3", 1800f);
+            Employee employee1 = new Employee("em1", "em1", 1200f); 
+            PMEmployee employee2 = new PMEmployee("pm2", "pm2", 4200f, "Wex"); 
+            DevEmployee employee3 = new DevEmployee("dv3", "dv3", 1800f, "C#");
+            QAEmployee employee4 = new QAEmployee("qa1", "qa1", 2500f, "Web");
+            QAEmployee employee5 = new QAEmployee("qa2", "qa2", 2500f, "Desktop");
 
-            QAEmployee qaemployee1 = new QAEmployee("qa1", "qa2", 2500f, "Web");
 
-            //employee1.FirstName = "Vasya";
 
-            Employee[] employees = new Employee[] { employee1, employee2, employee3, qaemployee1 };
+            Employee[] employees = new Employee[] { employee1, employee2, employee3, employee4, employee5 };
 
             
-            foreach (var tt in employees)
+            foreach (Employee employee in employees)
             {
-                Console.WriteLine("{0} {1} {2}", tt.FirstName, tt.LastName, tt.Salary);
+                Console.WriteLine(employee.GetInfo());
             }
-
-            
         }
     }
 }
