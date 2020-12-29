@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Object
 {
-    class Employee
+    abstract class Employee
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
