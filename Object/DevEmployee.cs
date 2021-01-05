@@ -18,5 +18,10 @@ namespace Object
             return FirstName + " " + LastName + " " + Salary + " " + ProgrammingLanguage;
         }
 
+        public override void Work()
+        {
+            Console.WriteLine("Dev work");
+        }
+
     }
 }

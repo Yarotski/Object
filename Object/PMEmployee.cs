@@ -17,5 +17,9 @@ namespace Object
         {
             return FirstName + " " + LastName + " " + Salary + " " + ManagingProject;
         }
+        public override void Work()
+        {
+            Console.WriteLine("PM work");
+        }
     }
 }

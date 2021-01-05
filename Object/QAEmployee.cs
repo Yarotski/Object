@@ -17,5 +17,10 @@ namespace Object
         {
             return FirstName + " " + LastName + " " + Salary + " " + Specialization;
         }
+
+        public override void Work()
+        {
+            Console.WriteLine("QAv work");
+        }
     }
 }

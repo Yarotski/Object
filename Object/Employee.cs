@@ -4,16 +4,15 @@ using System.Text;
 
 namespace Object
 {
-    abstract class Employee
+    abstract class Employee:IWorkable
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public float Salary { get; set; }
 
         public abstract string GetInfo();
-        //{
-        //    return FirstName + " " + LastName + " " + Salary;
-        //}
+
+        public abstract void Work();
 
     public Employee(string fn, string ln, float sal)
         {
