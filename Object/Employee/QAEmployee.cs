@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Object
 {
-    class QAEmployee: Employee
+    class QAEmployee: Employee, IMeetingAttendable
     {
         public string Specialization { get; set; }
 
@@ -20,7 +20,12 @@ namespace Object
 
         public override void Work()
         {
-            Console.WriteLine("QAv work");
+            Console.WriteLine("QA work");
+        }
+
+        public void AttendMeeting()
+        {
+            throw new NotImplementedException();
         }
     }
 }

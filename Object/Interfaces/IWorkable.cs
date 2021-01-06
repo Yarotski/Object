@@ -6,11 +6,7 @@ namespace Object
 {
     interface IWorkable
     {
-
-
         string GetInfo();
         void Work();
-
-
     }
 }

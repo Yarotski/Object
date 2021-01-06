@@ -15,7 +15,7 @@ namespace Object
 
         public string GetInfo()
         {
-            return "I am robot" + Producer;
+            return "I am a robot" + Producer;
         }
 
         public void Work()

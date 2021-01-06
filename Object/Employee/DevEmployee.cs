@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Object
 {
-    class DevEmployee:Employee
+    class DevEmployee:Employee, IMeetingAttendable
     {
         public string ProgrammingLanguage { get; set; }
 
@@ -17,11 +17,14 @@ namespace Object
         {
             return FirstName + " " + LastName + " " + Salary + " " + ProgrammingLanguage;
         }
-
         public override void Work()
         {
-            Console.WriteLine("Dev work");
+            Console.WriteLine("DEV work");
         }
 
+        public void AttendMeeting()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
